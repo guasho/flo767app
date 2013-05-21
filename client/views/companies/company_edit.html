@@ -1,0 +1,61 @@
+<template name="companyEdit"> 
+{{#with company}}
+<form class="main">
+<div class="control-group">
+<label class="control-label" for="email">Email</label> 
+<div class="controls">
+<input name="email" type="text" value="{{email}}" placeholder="Email"/> 
+</div>
+
+<label class="control-label" for="firstname">First Name</label> 
+<div class="controls">
+<input name="firstname" type="text" value="{{firstname}}" placeholder="First Name"/> 
+</div>
+
+<label class="control-label" for="lastname">Last Name</label> 
+<div class="controls">
+<input name="lastname" type="text" value="{{lastname}}" placeholder="lastname"/> 
+</div>
+
+<label class="control-label" for="title">Title</label> 
+<div class="controls">
+<input name="title" type="text" value="{{title}}" placeholder="Title"/> 
+</div>
+
+<label class="control-label" for="companyname">Company Name</label> 
+<div class="controls">
+<input name="companyname" type="text" value="{{companyname}}" placeholder="Company Name"/> 
+</div>
+
+<label class="control-label" for="telephone">Telephone</label> 
+<div class="controls">
+<input name="telephone" type="text" value="{{telephone}}" placeholder="Telephone"/> 
+</div>
+
+<label class="control-label" for="password">Password</label> 
+<div class="controls">
+<input name="password" type="text" value="" placeholder="Password"/> 
+</div>
+
+<label class="control-label" for="confirmpassword">Confirm password</label> 
+<div class="controls">
+<input name="confirmpassword" type="text" value="" placeholder="Confirm Password"/> 
+</div>
+
+</div>
+
+<div class="control-group"> 
+	<div class="controls">
+<input type="submit" value="Submit" class="btn btn-primary"/> 
+</div>
+
+
+</div>
+
+<div class="control-group">
+<div class="controls">
+<a class="btn btn-danger delete" href="#">Delete company</a>
+</div> </div> 
+</form>
+{{/with}}
+</template>
